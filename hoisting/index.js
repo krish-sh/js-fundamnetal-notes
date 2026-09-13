@@ -1,15 +1,13 @@
 console.log(a);
-test()
-arrowFun()
+test();
+arrowFun();
 
-var a =1 
+var a = 1;
 
-function test(){
-    console.log("hi");
-    
+function test() {
+  console.log("hi");
 }
 
 let arrowFun = () => {
-    console.log("hello");
-    
-}
+  console.log("hello");
+};
