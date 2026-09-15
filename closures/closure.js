@@ -34,3 +34,19 @@ function y(){
 }
 y() // this print  6 6 6 6 6
 
+
+// but to print the value like 1 2 3 4 5 we use clsoure inside the function for var
+
+function z(){
+    for(var i = 1; i<= 5; i++){
+        function close(i){
+            setTimeout(function(){
+                console.log(i);
+                
+            }, i * 1000)
+        }
+        close(i)
+    }
+}
+
+z()
