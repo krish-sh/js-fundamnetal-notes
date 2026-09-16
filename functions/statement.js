@@ -19,4 +19,13 @@ let b = function(){
 function sum(a,b){
     return a+b
 }
-console.log(sum(1, 2));
+// console.log(sum(1, 2));
+
+
+// Anonymous function
+
+let c = function(){
+    console.log("Anonymous function");
+    
+}
+// c()
