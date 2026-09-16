@@ -29,3 +29,13 @@ let c = function(){
     
 }
 // c()
+
+// Named function expression
+
+let d = function xyz(){
+    console.log("Name function expression");
+    console.log(xyz);
+    
+    
+}
+d()
