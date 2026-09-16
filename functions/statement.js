@@ -41,4 +41,12 @@ function firstClass() {
     console.log("First class function");
   };
 }
-firstClass()()
+// firstClass()()
+
+// Arrow function
+
+let arrow = () => {
+    console.log("Arrow funciton");
+    
+}
+arrow()
