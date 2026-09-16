@@ -4,4 +4,12 @@ function greet(){
     console.log("its a function statment");
     
 }
-greet()
+// greet()
+
+// Function expression
+
+let b = function(){
+    console.log("function expression");
+    
+}
+// b()
