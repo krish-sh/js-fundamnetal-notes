@@ -1,6 +1,16 @@
 
-let nums = [5, 1, 4, 2, 6];
+let nums = [6, 1, 4, 2, 5];
 
-let output = nums.reduce((acc,curr) => acc += curr)
+// let output = nums.reduce((acc,curr) => acc += curr)
 
-console.log(output);
+// console.log(output);
+
+let max = nums.reduce((acc, curr) => {
+    
+    if(acc <= curr){
+        acc = curr
+    }
+    return acc
+})
+console.log(max);
+
