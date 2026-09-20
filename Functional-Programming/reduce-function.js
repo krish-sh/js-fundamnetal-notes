@@ -20,15 +20,24 @@ const users = [
   { firstName: "deepika", lastName: "padukone", Age: 26 },
 ];
 
-let output = users.reduce((acc, curr) => {
-  if (acc[curr.Age]) {
-    acc[curr.Age] += 1;
-  } else {
-    acc[curr.Age] = 1;
-  }
+// let output = users.reduce((acc, curr) => {
+//   if (acc[curr.Age]) {
+//     acc[curr.Age] += 1;
+//   } else {
+//     acc[curr.Age] = 1;
+//   }
 
-   return acc
-}, {});
+//    return acc
+// }, {});
+
+// console.log(output);
+
+
+let output = users.reduce((acc, curr) => {
+    if(curr.Age < 30){
+        acc.push(curr.firstName)
+    }
+    return acc
+}, [])
 
 console.log(output);
-
