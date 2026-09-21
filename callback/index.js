@@ -2,6 +2,8 @@
 
 let cart = ["shoes", "shirt", "pant"];
 
+//  this is a callback hell example
+
 api.getCart(cart, function(){
 
     api.proceddToPayment(function(){
@@ -10,7 +12,7 @@ api.getCart(cart, function(){
 
             api.updateWallet(function(){
 
-                
+
             })
         })
     })
