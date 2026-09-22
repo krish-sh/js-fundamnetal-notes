@@ -2,14 +2,15 @@ let cart = ["pant", "shoes", "shirt"];
 
 // consumer part
 
-let promise = createOrder(cart);
-
-promise
+createOrder(cart)
   .then((orderId) => {
     console.log(orderId);
-
-    //   ProcceddToPayment(orderId);
-  }) //Error handling
+    return orderId;
+  }) // Promise chain
+  .then(function (orderId) {
+    return proccedToPayment(orderId);
+  })
+  //Error handling
   .catch(function (err) {
     console.log(err.message);
   });
@@ -40,4 +41,14 @@ function createOrder() {
 }
 
 function validateCart() {
+  return true;
+}
+
+function proccedToPayment(orderId) {
+  return new Promise((resolve, reject) => {
+    resolve("Payment successfully");
+    console.log("done");
+    
+    
+  });
 }
