@@ -10,3 +10,6 @@ Promise.allSettled()
 
 // with this if have a error in any user it sent same as a response like the successed one anf where the error happen it simply sent error on that part
 
+Promise.race()
+
+// this api return the value who execute first and take less time from all other.
