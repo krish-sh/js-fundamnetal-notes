@@ -13,3 +13,9 @@ Promise.allSettled()
 Promise.race()
 
 // this api return the value who execute first and take less time from all other.
+
+Promise.any()
+
+// it wait for 1st one to return the sucess. if it sent an error it don't return error it will wait until anyone sent success
+
+// if none is sent success it sent an aggregate error 
