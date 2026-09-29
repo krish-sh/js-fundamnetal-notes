@@ -1,0 +1,10 @@
+"use stirct";
+
+const obj = {
+  a: 10,
+  x: function () {
+    console.log(this);
+  },
+};
+
+obj.x()
