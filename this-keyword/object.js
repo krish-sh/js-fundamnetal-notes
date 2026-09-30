@@ -39,3 +39,8 @@ let printName = function (city) {
 
 // .call also work like this
 printName.call(Name, "gurdaspur")
+
+// .apply 
+// in this we pass the argument in the array
+
+printName.apply(Name, ["gurdaspur"])
