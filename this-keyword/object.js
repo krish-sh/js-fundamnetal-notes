@@ -44,3 +44,10 @@ printName.call(Name, "gurdaspur")
 // in this we pass the argument in the array
 
 printName.apply(Name, ["gurdaspur"])
+
+// .bind method
+// it's same as call method but it store in the variable to call it later
+// it is a function
+
+let printFullName = printName.bind(Name, "gurdaspur")
+printFullName()
